@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 
 public class HttpManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class HttpManager : MonoBehaviour
 
     [SerializeField]
     private string URL;
+    [SerializeField] Text[] texts;
+    int textCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,10 +36,11 @@ public class HttpManager : MonoBehaviour
         else if(www.responseCode == 200){
             //Debug.Log(www.downloadHandler.text);
             Scores resData = JsonUtility.FromJson<Scores>(www.downloadHandler.text);
-
+            textCount = 0;
             foreach (ScoreData score in resData.scores)
-            {
-                Debug.Log(score.userId +" | "+score.value);
+            { 
+                texts[textCount].text= score.userId.ToString() +". Score: "+score.value.ToString();
+                textCount += 1;
             }
         }
         else
