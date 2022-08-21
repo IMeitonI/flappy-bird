@@ -3,24 +3,24 @@
     {
         "scores":   [
             {
-              "userId": 1,
+              "userId": "Majo",
               "value": 5,
               "name":"lololex"
             },
             {
-              "userId":2,
+              "userId":"Manuel",
               "value": 2
             },
             {
-              "userId":3,
+              "userId":"El terminator",
               "value": 4
             },
             {
-              "userId":4,
+              "userId":"Pajaroso",
               "value": 14
             },
             {
-              "userId":5,
+              "userId":"El prrr",
               "value": 10
             }
               ] 
