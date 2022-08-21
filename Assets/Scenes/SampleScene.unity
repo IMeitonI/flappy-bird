@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e968c4b65d0088c44ae8df8de507ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  URL: https://my-json-server.typicode.com/manolovillarreal/FakeApi
+  URL: https://my-json-server.typicode.com/IMeitonI/MyFakeApi
   texts:
   - {fileID: 1682945622}
   - {fileID: 1671853153}
